@@ -1,0 +1,56 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: flex-start;   /* Align elements to the top vertically */
+    flex-direction: column;    /* Stack elements vertically (optional, depends on other content) */
+}
+
+/* SLIDER */
+
+.datapoint-slider{
+    background-color: red;
+}
+
+/* CHART CONTAINER */
+#chart-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    border-radius: 12px;
+    background-color: #fff;  /* Background for container */
+}
+
+#chart {
+    width: 100%;
+    height: 600px;
+}
+
+
+
+/* LOADING CIRCLE */
+
+#chart-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust based on your chart height */
+  }
+  
+  #loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensures it stays on top */
+  }
+  
+  #chart {
+    width: 100%;
+    height: 100%;
+  }
